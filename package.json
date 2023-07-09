@@ -9,7 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/server": "^11.11.0",
+    "@heroicons/react": "^2.0.18",
+    "@mantine/core": "^6.0.16",
     "@mantine/hooks": "^6.0.16",
+    "@mantine/next": "^6.0.16",
     "@mapbox/mapbox-gl-geocoder": "^5.0.1",
     "autoprefixer": "10.4.14",
     "eslint": "8.44.0",
@@ -21,7 +26,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
-    "tailwindcss": "3.3.2"
+    "tailwindcss": "3.3.2",
+    "tw-elements": "^1.0.0-beta2"
   },
   "devDependencies": {
     "daisyui": "^3.2.1"
