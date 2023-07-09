@@ -9,7 +9,7 @@ export default function Home() {
       <div className='p-4' >
         <h1 className='font-semibold text-xl lg:text-5xl'>FIND THE BEST <br /> STREET FOOD IN <br/> YOUR TOWN</h1>
       </div>
-      <div className='w-1/2 h-full'>
+      <div className='w-1/2 h-full hidden md:block'>
         <img className="w-5/6 m-auto" src="https://www.shutterstock.com/image-vector/set-market-wooden-store-stall-260nw-1644699406.jpg" alt="" />
       </div>
      </div>
@@ -73,7 +73,7 @@ export default function Home() {
      {
       Card.photo.map((val)=>{
         return(
-          <div class="card card-compact w-1/2 lg:w-1/4 h-80 bg-base-100 shadow-xl m-5">
+          <div class="card card-compact w-4/5 lg:w-1/2 lg:w-1/4 h-auto md:h-80 bg-base-100 shadow-xl m-5">
   <figure ><img className='lg:p-3 drop-shadow-lg w-full ' src={val} alt="Shoes" /></figure>
   <div class="w-full pb-4">
    <div className='flex flex-wrap lg:justify-between m-2'>

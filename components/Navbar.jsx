@@ -45,8 +45,8 @@ const Navbar = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className=" w-full fixed top-0 left-0">
-      <div className="md:flex items-center justify-between mt-5 md:px-10 px-7">
+    <div className=" w-full">
+      <div className="md:flex items-center justify-around mt-5 md:px-10 px-7">
         {/* logo section */}
         <div className="font-bold text-xl cursor-pointer flex items-center gap-1">
           <span className="font-bold">FoodieFind</span>
@@ -60,7 +60,7 @@ const Navbar = () => {
         </div>
         {/* linke items */}
         <ul
-          className={`md:flex  md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`md:flex ml-6 md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-40 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
             open ? "top-12" : "top-[-490px]"
           }`}
         >
@@ -75,8 +75,8 @@ const Navbar = () => {
             </li>
           ))}
           
-          <div className="flex">
-        <button className="btn bg-yellow-400 text-white md:ml-8 text-sm px-2 py-1 rounded duration-500 md:static">
+          <div className="flex visible md:hidden">
+        <button className="btn  bg-yellow-400 text-white md:ml-8 text-sm px-2 py-1 rounded duration-500 md:static">
             Signup
           </button>
           <button className="btn bg-yellow-400 text-white md:ml-8 text-sm px-2 py-1 rounded duration-500 md:static">
@@ -85,7 +85,14 @@ const Navbar = () => {
         </div>
         </ul>
         
-
+        <div className="flex invisible md:visible">
+        <button className="btn bg-yellow-400 text-white md:ml-8 text-sm px-2 py-1 rounded duration-500 md:static">
+            Signup
+          </button>
+          <button className="btn bg-yellow-400 text-white md:ml-8 text-sm px-2 py-1 rounded duration-500 md:static">
+            Login
+          </button>
+        </div>
 
         {/* button */}
        
